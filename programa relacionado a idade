@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int leidade(){
+int i;
+   printf("Digite a idade (0 a 110)");
+   scanf("%d", &i);
+      while(i<0 || i> 110) {
+          printf("digite novamnete");
+          scanf("%d", &i);
+      } 
+     return i;
+}
+ int main () {
+     int id1, id2;
+     
+    id1 = leidade();
+    id2 = leidade();
+    printf("dif =%d", id1 - id2);
+    return 0;
+ }
+     
